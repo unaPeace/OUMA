@@ -1,0 +1,48 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+<head>
+	<title>OUMA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0; width=device-width">
+	<link rel="stylesheet" href="{% static 'CSS/signUpStyle.css' %}">
+</head>
+
+<body>
+
+  <form>
+
+  
+
+    <div class="field-name">
+      <a class="home-btn" href="Index.html"><img src="{% static 'Media/IMG/Logo/OUMA Logo 1.png' %}" alt="OUMA" width="50px" height="auto"></a>
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Username" required>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+
+    <div class="field-email innactive">
+      <a class="home-btn" href="Index.html"><img src="{% static 'Media/IMG/Logo/OUMA Logo 1.png' %}" alt="OUMA" width="50px" height="auto"></a>
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="Email" required>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+
+    <div class="field-password innactive">
+      <a class="home-btn" href="Index.html"><img src="{% static 'Media/IMG/Logo/OUMA Logo 1.png' %}" alt="OUMA" width="50px" height="auto"></a>
+      <i class="fas fa-key"></i>
+      <input type="password" placeholder="Password" required>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+
+    <div class="field-finish innactive">
+      <a class="fas fa-heart" href="Index.html"></a>
+    </div>
+
+  </form>
+
+  <script  src="./inputScript.js"></script>
+
+</body>
+
+</html>
