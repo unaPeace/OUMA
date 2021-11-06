@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #FED0D1;
+  transition: background 0.5s ease;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-btn {
+  position: absolute;
+  left: -20%;
+  top: 0;
+  margin: 0;
+}
+
+.home-btn2 {
+  position: relative;
+  left: 100px;
+  top: 45%;
+  margin: 0;
+}
+
+.field-name,
+.field-email,
+.field-password,
+.field-location,
+.field-destination {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.field-finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FED0D1;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.field-transport {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FED0D1;
+
+  display: flex;
+  align-items: flex-end;
+  justify-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.field-name i,
+.field-email i,
+.field-password i,
+.field-finish i,
+.field-location i,
+.field-destination i,
+.field-transport i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.innactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
+}
+
+.field-name input,
+.field-email input,
+.field-password input,
+.field-location input,
+.field-destination input {
+  background: none;
+  border: none;
+  flex: 1;
+  outline: none;
+  height: 100%;
+}
+
+.fa,.fas{
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    display:inline-block;
+    font-style:normal;
+    font-variant:normal;
+    text-rendering:auto;
+    line-height:1;
+}
+
+.fa,.fas{
+  font-family:"Font Awesome 5 Pro";
+  font-weight:900
+}
+
+.fa-arrow-down:before{
+    content:url(Media/forward-icon.png)
+}
+
+.fa-envelope:before{
+    content:url(Media/message.png)
+}
+
+.fa-heart:before{
+    content:url(Media/OUMA\ Logo\ 1.png);
+    width:300px;
+    height: auto;
+}
+
+.fa-train:before{
+  content:url(Media/IMG/Button\ Icons/train-icon.png);
+  margin: 50px;
+}
+
+.fa-bus:before{
+  content:url(Media/IMG/Button\ Icons/bus-icon.png);
+  margin: 50px;
+}
+
+.fa-taxi:before{
+  content:url(Media/IMG/Button\ Icons/minibus-icon.png);
+  margin: 50px;
+}
+
+.fa-uber:before{
+  content:url(Media/IMG/Button\ Icons/car-icon.png);
+  margin: 50px;
+}
+
+.fa-key:before{
+    content: url(Media/key.png);
+}
+
+.fa-user:before{
+    content:url(Media/person.png)
+}
+
+.fa-location:before{
+  content:url(Media/IMG/Icons/planner_dashboard_discover_places.svg)
+}
+
+.fa-destination:before{
+  content:url(Media/IMG/Icons/planner_dashboard_discover_places.svg)
+}
+
+.fad.fa-arrow-down:after{
+    content:url(Media/forward-icon.png)
+}
+
+.fad.fa-envelope:after{
+    content:url(Media/message.png)
+}
+
+.fad.fa-heart:after{
+    content:url(Media/OUMA\ Logo\ 1.png)
+}
+
+.fad.fa-key:after{
+    content: url(Media/key.png);
+}
+
+.fad.fa-user:after{
+    content:url(Media/person.png)
+}
+
+
+
+@font-face{
+    font-family:"Font Awesome 5 Pro";
+    font-style:normal;
+    font-weight:300;
+    font-display:auto;
+    src:url(../webfonts/fa-light-300.eot);
+    src:url(../webfonts/fa-light-300.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-light-300.woff2) format("woff2"),url(../webfonts/fa-light-300.woff) format("woff"),url(../webfonts/fa-light-300.ttf) format("truetype"),url(../webfonts/fa-light-300.svg#fontawesome) format("svg")
+}
+
+@font-face{
+    font-family:"Font Awesome 5 Pro";
+    font-style:normal;
+    font-weight:400;
+    font-display:auto;
+    src:url(../webfonts/fa-regular-400.eot);
+    src:url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-regular-400.woff2) format("woff2"),url(../webfonts/fa-regular-400.woff) format("woff"),url(../webfonts/fa-regular-400.ttf) format("truetype"),url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face{
+    font-family:"Font Awesome 5 Pro";
+    font-style:normal;
+    font-weight:900;
+    font-display:auto;
+    src:url(../webfonts/fa-solid-900.eot);
+    src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+@font-face{
+  font-family:"Font Awesome 5 Brands";
+  font-style:normal;
+  font-weight:normal;
+  font-display:auto;
+  src:url(../webfonts/fa-brands-400.eot);
+  src:url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-brands-400.woff2) format("woff2"),url(../webfonts/fa-brands-400.woff) format("woff"),url(../webfonts/fa-brands-400.ttf) format("truetype"),url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face{
+  font-family:"Font Awesome 5 Duotone";
+  font-style:normal;
+  font-weight:900;
+  font-display:auto;
+  src:url(../webfonts/fa-duotone-900.eot);
+  src:url(../webfonts/fa-duotone-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-duotone-900.woff2) format("woff2"),url(../webfonts/fa-duotone-900.woff) format("woff"),url(../webfonts/fa-duotone-900.ttf) format("truetype"),url(../webfonts/fa-duotone-900.svg#fontawesome) format("svg")
+}
+
+@-webkit-keyframes fa-spin{
+  0%{
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg)
+  }
+  to{
+      -webkit-transform:rotate(1turn);
+      transform:rotate(1turn)
+  }
+}
+
+@keyframes fa-spin{
+  0%{
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg)
+  }
+  to{
+      -webkit-transform:rotate(1turn);
+      transform:rotate(1turn)
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
